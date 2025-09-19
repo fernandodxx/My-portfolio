@@ -1,0 +1,12 @@
+@use "sass/utilities/css-variables" as cv
+@use "bulma/sass/themes/dark"
+
+// Gerar o tema escuro para a preferência do sistema
+@include cv.system-theme($name: "dark") {
+  @include dark.dark-theme
+}
+
+// Gerar o tema escuro para o atributo HTML [data-theme=dark]
+@include cv.bulma-theme($name: "dark") {
+  @include dark.dark-theme
+}
